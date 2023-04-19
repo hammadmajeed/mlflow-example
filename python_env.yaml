@@ -8,4 +8,5 @@ build_dependencies:
 # Dependencies required to run the project.
 dependencies:
   - mlflow
+  - pandas
   - scikit-learn
