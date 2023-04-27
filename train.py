@@ -48,7 +48,8 @@ if __name__ == "__main__":
     lr.fit(train_x, train_y)
 
     predicted_qualities = lr.predict(test_x)
-
+    test_x.iloc[1].to_json('temp.json'.format(1))
+    print(test_x.columns)
     (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
 
     print("Elasticnet model (alpha=%f, l1_ratio=%f):" % (alpha, l1_ratio))
