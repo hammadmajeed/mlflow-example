@@ -1,10 +1,5 @@
 # Python version required to run the project.
 python: "3.12.6"
-# Dependencies required to build packages. This field is optional.
-build_dependencies:
-  - pip
-  - setuptools
-  - wheel
 # Dependencies required to run the project.
 dependencies:
   - mlflow
